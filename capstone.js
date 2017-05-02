@@ -26,22 +26,26 @@ function addCheese(id){
     else{makeImage("images/" + id + ".png",240,10,350,350,1)}
     
 
-select.innerHTML = "<button onclick='addToppings(this.id)' id='pepperoni' type='button'><img src='images/pep.png' height='100' width='100'></button><button onclick='addToppings(this.id)' id= 'mushroom' type='button'><img src='images/mush.png' height='100' width='100'</button><button onclick='addToppings(this.id)' id='pineapple-chuncks' type='button'><img src='images/pinapple.png' height='100' width='100'></button>"    
+select.innerHTML = "<button onclick='addToppings(this.id)' id='pepperoni' type='button'><img src='images/pep.png' height='100' width='100'></button><button onclick='addToppings(this.id)' id= 'mushroom' type='button'><img src='images/mush.png' height='100' width='100'</button><button onclick='addToppings(this.id)' id='pineapple-chuncks' type='button'><img src='images/pinapple.png' height='100' width='100'></button> <button onclick='done()' id = 'done' type='button'>Done</button>"   
 
 }
 
 function addToppings(id){
     if(id == 'pepperoni'){
-            makeImage("images/" + id + ".png",255,65,290,290,1)
+            makeImage("images/" + id + ".png",320,115,100,100,1)
+            makeImage("images/" + id + ".png",390,195,100,100,1)
         }
 
     else if(id=='mushroom'){
-        makeImage("images/" + id + ".png",240,10,350,350,1)
+        makeImage("images/" + id + ".png",290,90,150,150,1)
+        makeImage("images/" + id + ".png",360,165,150,150,1)
     }
 
     else{
-        makeImage("images/" + id + ".png",240,10,350,350,1)
+         makeImage("images/" + id + ".png",320,195,100,100,1)
+         makeImage("images/" + id + ".png",390,115,100,100,1)
     }
 
+    function done(){}
 }
 
