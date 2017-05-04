@@ -5,7 +5,7 @@ function addDough(id){
    
 makeImage("images/" + id + ".png",250,60,300,300,1)
 
-select.innerHTML = "<button onclick='addSauce(this.id)' id='pesto-sauce' name='pesto' type='button'><img src='images/pesto.png' height='100' width='100'></button><button onclick='addSauce(this.id)' id='red-sauce' name='red' type='button'><img src='images/red.png' height='100' width='100'></button>"
+select.innerHTML = "<button onclick='addSauce(this.id)' id='red-sauce' name='red' type='button'><img src='images/red.png' height='100' width='100'><br>Red Sauce</button><button onclick='addSauce(this.id)' id='pesto-sauce' name='pesto' type='button'><img src='images/pesto.png' height='100' width='100'><br>Pesto Sauce</button>"
 
 }
 
@@ -13,7 +13,7 @@ function addSauce(id){
     
 makeImage("images/" + id + ".png",250,60,300,300,1)
 
-select.innerHTML = "<button onclick='addCheese(this.id)' id='cheese1' type='button'><img src='images/cheese1.png' height='100' width='100'></button><button onclick='addCheese(this.id)' id='cheese2' type='button'><img src='images/cheese2.png' height='100' width='100'></button>"
+select.innerHTML = "<button onclick='addCheese(this.id)' id='cheese2' type='button'><img src='images/cheese2.png' height='100' width='100'><br>Mozzarella Cheese</button><button onclick='addCheese(this.id)' id='cheese1' type='button'><img src='images/cheese1.png' height='100' width='100'><br>Chedder Cheese</button>"
 
 }
 
@@ -26,7 +26,7 @@ function addCheese(id){
     else{makeImage("images/" + id + ".png",240,10,350,350,1)}
     
 
-select.innerHTML = "<button onclick='addToppings(this.id)' id='pepperoni' type='button'><img src='images/pep.png' height='100' width='100'></button><button onclick='addToppings(this.id)' id= 'mushroom' type='button'><img src='images/mush.png' height='100' width='100'</button><button onclick='addToppings(this.id)' id='pineapple-chuncks' type='button'><img src='images/pinapple.png' height='100' width='100'></button> <button onclick='done()' id = 'done' type='button'>Done</button>"   
+select.innerHTML = "<button onclick='addToppings(this.id)' id='pepperoni' type='button'><img src='images/pep.png' height='100' width='100'><br>Pepperoni</button><button onclick='addToppings(this.id)' id= 'mushroom' type='button'><img src='images/mush.png' height='100' width='100'><br>Mushrooms</button><button onclick='addToppings(this.id)' id='pineapple-chuncks' type='button'><img src='images/pinapple.png' height='100' width='100'><br>Pineapple</button> <button onclick='drinks()' id = 'drinks' type='button'><img src='images/drinks.png' height='100' width='100'><br>Drinks</button><button onclick='done()' id = 'done' type='button'><img src='images/done.png' height='100' width='100'><br>You finished?</button>"   
 
 }
 
@@ -46,6 +46,19 @@ function addToppings(id){
          makeImage("images/" + id + ".png",390,115,100,100,1)
     }
 
-    function done(){}
+}
+
+function drinks(){
+select.innerHTML = "<button onclick='chooseDrink(this.id)' id='coke1' type='button'><img src='images/coke1.png' height='100' width='100'><br>Coke</button><button onclick='chooseDrink(this.id)' id= 'sprite' type='button'><img src='images/sprite.png' height='100' width='100'><br>Sprite</button><button onclick='chooseDrink(this.id)' id='pepsi' type='button'><img src='images/pepsi.png' height='100' width='100'><br>Pepsi</button><button onclick='chooseDrink(this.id)' id='dr-pepper' type='button'><img src='images/dr-pepper.png' height='100' width='100'><br>Dr. Pepper</button>"
+}
+
+function chooseDrink(id){
+    makeImage("images/" + id + ".png",100,30,150,150,1)
+select.innerHTML = "<button onclick='done()' id = 'done' type='button'><img src='images/done.png' height='100' width='100'></button>"   
+}
+
+function done(){
+
+
 }
 
