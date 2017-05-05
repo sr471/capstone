@@ -58,7 +58,11 @@ select.innerHTML = "<button onclick='done()' id = 'done' type='button'><img src=
 }
 
 function done(){
-
+    makeText("Congragulations",100,100,72)
+    
+    makeText("You done it",200,200,72)
+    
+select.innerHTML = "<button onclick='location.reload()' id = 'again' type='button'><img src='images/again.png' height='100' width='100'><br>Make Another?</button>"   
 
 }
 
