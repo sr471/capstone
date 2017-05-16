@@ -1,14 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 #canvas {
   border-style: solid;
   border-width: 2px;
-  background: #FF5D62;
+  background: #F3E9FA;
   cursor: none;
+  font-family: 'Open Sans', sans-serif;
 }
 
 #done{
  margin-top: 13px
 }
 
-#boo{
-  background: #FFD099;
+
+body {
+    font-family: 'Open Sans', sans-serif;
+     background: #EACEFF;
+}
+
+text {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: #663F45;}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 100;
+    color: #663F45;
+}
+
+button {
+    background: #ECECEC;
+}
+
+button:hover {
+    background: #E3E3E3;
 }
